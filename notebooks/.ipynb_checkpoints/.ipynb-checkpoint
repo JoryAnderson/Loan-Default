@@ -1283,35 +1283,35 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 76,
+   "execution_count": 77,
    "metadata": {},
    "outputs": [
     {
-     "ename": "SyntaxError",
-     "evalue": "unexpected EOF while parsing (<ipython-input-76-0df55286f2de>, line 2)",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-76-0df55286f2de>\"\u001b[1;36m, line \u001b[1;32m2\u001b[0m\n\u001b[1;33m    print(\"Decision Tree TEST score with \",format(model.score(X_test, y_test))\u001b[0m\n\u001b[1;37m                                                                              ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m unexpected EOF while parsing\n"
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Decision Tree TRAIN score with  1.0\n",
+      "Decision Tree TEST score with  0.8555702333773668\n"
      ]
     }
    ],
    "source": [
     "print(\"Decision Tree TRAIN score with \",format(model.score(X_train_res, y_train_res)))\n",
-    "print(\"Decision Tree TEST score with \",format(model.score(X_test, y_test))"
+    "print(\"Decision Tree TEST score with \",format(model.score(X_test, y_test)))"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
+   "execution_count": 78,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "0.5684656885022198"
+       "0.5223573848802977"
       ]
      },
-     "execution_count": 30,
+     "execution_count": 78,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1323,7 +1323,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 31,
+   "execution_count": 79,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1333,16 +1333,16 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 32,
+   "execution_count": 80,
    "metadata": {},
    "outputs": [
     {
      "data": {
       "text/plain": [
-       "0.7861424157784472"
+       "0.9237871741964625"
       ]
      },
-     "execution_count": 32,
+     "execution_count": 80,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -1354,24 +1354,9 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 33,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "{'criterion': 'gini',\n",
-       " 'max_depth': 5,\n",
-       " 'max_leaf_nodes': 15,\n",
-       " 'min_samples_leaf': 5,\n",
-       " 'min_samples_split': 5}"
-      ]
-     },
-     "execution_count": 33,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "param_grid = {\"criterion\": ['entropy', 'gini'],\n",
     "\"min_samples_split\": [5,10,15],\n",
@@ -1386,7 +1371,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 34,
+   "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -1398,35 +1383,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 35,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Accuracy: 0.6660126842177305\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "print(\"Accuracy:\",metrics.accuracy_score(y_test, y_pred))"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 36,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Decision Tree TRAIN score with  0.6879314375715218\n",
-      "Decision Tree TEST score with  0.6660126842177305\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "print(\"Decision Tree TRAIN score with \",format(model.score(X_train_res, y_train_res)))\n",
     "print(\"Decision Tree TEST score with \",format(model.score(X_test, y_test)))"
@@ -1434,38 +1402,18 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 37,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "[[13688  6627]\n",
-      " [  693   909]]\n"
-     ]
-    }
-   ],
+   "outputs": [],
    "source": [
     "print(confusion_matrix(y_test,y_pred))"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 38,
+   "execution_count": null,
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "text/plain": [
-       "0.620601785916755"
-      ]
-     },
-     "execution_count": 38,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
+   "outputs": [],
    "source": [
     "auc = roc_auc_score(y_test, y_pred)\n",
     "auc"
