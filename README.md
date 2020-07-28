@@ -49,9 +49,9 @@ $ jupyter notebook
 
 | technique | paper |
 | ------ | ------ |
-| SMOTE | [https://arxiv.org/pdf/1106.1813.pdf][PlDb] |
-| Imputation | [https://stats.idre.ucla.edu/wp-content/uploads/2016/02/multipleimputation.pdf][PlGh] |
-| Decision Tree | [https://hunch.net/~coms-4771/quinlan.pdf][PlGd] |
-| Random Forest | [https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf][PlOd] |
-| LightGBM | [https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf][PlMe] |
+| SMOTE | [https://arxiv.org/pdf/1106.1813.pdf]|
+| Imputation | [https://stats.idre.ucla.edu/wp-content/uploads/2016/02/multipleimputation.pdf] |
+| Decision Tree | [https://hunch.net/~coms-4771/quinlan.pdf] |
+| Random Forest | [https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf] |
+| LightGBM | [https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf] |
 
