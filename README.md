@@ -34,9 +34,13 @@ $ conda create --name=Loan-Default
 $ conda activate Loan-Default
 $ conda install scikit-learn
 $ conda install matplotlib
+$ conda install pandas
+$ conda install numpy
+$ conda install scipy
 $ conda install seaborn
 $ conda install jupyter
 $ conda install -c conda-forge imbalanced-learn
+$ conda install -c conda-forge lightgbm
 $ jupyter notebook
 ```
 
