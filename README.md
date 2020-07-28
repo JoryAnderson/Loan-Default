@@ -33,6 +33,7 @@ This repo is trying to predict if a person is going to default on their loan.
 
 ```sh
 $ conda create --name=Loan-Default
+$ conda activate Loan-Default
 $ conda install scikit-learn
 $ conda install matplotlib
 $ conda install seaborn
