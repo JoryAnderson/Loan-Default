@@ -19,8 +19,8 @@ This repo is trying to predict if a person is going to default on their loan.
     Submission_Notebook prepares the data and a model to make a submission to be graded by the kaggle system.
     The kaggle scoring system takes a csv of (SK_ID_CURR, TARGET) where SK_ID_CURR is the persons ID and TARGET is the percent likelihood that person will default on their loan(ranging between 0.00 and 1.00).
 - **LightGBM.ipynb** <br/>
-    LightGBM is the state of the art gradient boosting model. LightGBM working with null values in the dataset, so no need to use imputation. 
-    LightGBM can also handle imbalanced data, so no need to use SMOTE.
+    LightGBM is the state of the art gradient boosting model. LightGBM works with null values in the dataset, so no need to use imputation. 
+    LightGBM can also handle imbalanced data, so no need to use SMOTE. 
     {To be completed}
 - **Model Performance.ipynb** <br/> 
     {To be filled in}
