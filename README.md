@@ -16,7 +16,7 @@ This repo is trying to predict if a person is going to default on their loan.
 - **Feature_Eng.ipynb** <br/>
   This notebook is an attempt at doing feature engineering.
   Tries to transform the other CSV files to make new meaningful columns and then join the new columns to the dataset. Saves the new dataset to csv for Submission_Notebook.ipynb to use.
-- **Submission_Notebook.ipynb** <br/>
+- **DecisionTree_Submission.ipynb** <br/>
   Submission_Notebook prepares the data and a Decision Tree model to make a submission to be graded by the kaggle system.
   The kaggle scoring system takes a csv of (SK_ID_CURR, TARGET) where SK_ID_CURR is the persons ID and TARGET is the percent likelihood that person will default on their loan(ranging between 0.00 and 1.00).
 - **LightGBM.ipynb** <br/>
