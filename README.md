@@ -17,7 +17,7 @@ This repo is trying to predict if a person is going to default on their loan.
   This notebook is an attempt at doing feature engineering.
   Tries to transform the other CSV files to make new meaningful columns and then join the new columns to the dataset. Saves the new dataset to csv for Submission_Notebook.ipynb to use.
 - **Submission_Notebook.ipynb** <br/>
-  Submission_Notebook prepares the data and a model to make a submission to be graded by the kaggle system.
+  Submission_Notebook prepares the data and a Decision Tree model to make a submission to be graded by the kaggle system.
   The kaggle scoring system takes a csv of (SK_ID_CURR, TARGET) where SK_ID_CURR is the persons ID and TARGET is the percent likelihood that person will default on their loan(ranging between 0.00 and 1.00).
 - **LightGBM.ipynb** <br/>
   LightGBM is the state of the art gradient boosting model. LightGBM works with null values in the dataset, so no need to use imputation.
@@ -25,7 +25,8 @@ This repo is trying to predict if a person is going to default on their loan.
   {To be completed}
 - **LGBM_hyperparameterization.ipynb** <br/>
   LightGBM is the state of the art gradient boosting model. LightGBM works with null values in the dataset, so no need to use imputation.
-  Here we label/onehot encode the input data, visualize the effects of a few different parameters on the LGBM classifier, and then create a final LGBM classifier using those parameters and produce the lgbm_sub.csv submission document with the classified application_test data
+  Here we label/onehot encode the input data, visualize the effects of a few different parameters on the LGBM classifier, and then create a final LGBM classifier using those parameters and produce the lgbm_sub.csv submission document with the classified application_test data.
+  
 - **Model Performance.ipynb** <br/>
   {To be filled in}
 
