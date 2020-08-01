@@ -54,7 +54,7 @@ The dataset for the loan defautlts is highly class-imbalanced, since most people
 
 #### [Imputation](https://stats.idre.ucla.edu/wp-content/uploads/2016/02/multipleimputation.pdf)
 
-**todo:describe**
+97% perrcent of the dataset examples are missing at least one feature. A basic strategy for handling this situation would be to drop any columns that have any missing values, but this would reduce the size of the training set by 97%, down to only 11351 examples from the original 307511, losing valuable data. To mitigate this, Imputation attempts to fill in the missing information by infereing them from the known examples. scikit-learn's SimpleImputer allows for constant value filling, as well as statistical filling. For this project, the filling is done using the mean of the known examples.
 
 #### [Decision Tree](https://hunch.net/~coms-4771/quinlan.pdf)
 
