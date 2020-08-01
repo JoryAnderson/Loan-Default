@@ -23,6 +23,10 @@ This repo is trying to predict if a person is going to default on their loan.
     LightGBM is the state of the art gradient boosting model. LightGBM works with null values in the dataset, so no need to use imputation. 
     LightGBM can also handle imbalanced data, so no need to use SMOTE. 
     {To be completed}
+- **LGBM_hyperparameterization.ipynb** <br/>
+    LightGBM is the state of the art gradient boosting model. LightGBM works with null values in the dataset, so no need to use imputation. 
+    Here we label/onehot encode the input data, visualize the effects of a few different parameters on the LGBM classifier, and then create a final LGBM classifier using those parameters and produce the lgbm_sub.csv submission document with the classified application_test data
+    
 - **Model Performance.ipynb** <br/> 
     {To be filled in}
 
