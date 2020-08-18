@@ -62,6 +62,6 @@ This model imposes a multitude of split criterion over a specified amount of nod
 
 A random forest model is composed of a set of decision trees, where it takes the majority vote or average prediction, depending on if the problem is a classification or regression problem.
 
-#### [LightGBM]([https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf)
+#### [LightGBM](https://papers.nips.cc/paper/6907-lightgbm-a-highly-efficient-gradient-boosting-decision-tree.pdf)
 
 Simplistically, a gradient boosting model uses a series of weak hypotheses on a set of features to create nuanced meshes, like a set of linear separators. More information on gradient boosting models and specifically the LightGBM model can be found in the above link.
